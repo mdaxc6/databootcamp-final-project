@@ -42,7 +42,7 @@ Finally, we will host that app using Heroku so it will be publicly a
 
 ## Webpage
 
-Here is a very rough idea of what the end result will look like.
+Here is a ***very rough*** idea of what the end result will look like.
 The about page will have a description of how we setup the model and how it works
 The visuals page (time permitting) will include some analysis such as most frequent words or review length
 ![Webpage Outline](images/webpage.png)
