@@ -1,12 +1,13 @@
-import numpy as np
-import pandas as pd
+
 from flask import Flask, render_template, jsonify
+from flask_cors import CORS
 
 
 ###################################################
 # Flask Setup
 ###################################################
 app = Flask(__name__)
+#cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 
 ###################################################
@@ -23,3 +24,6 @@ def index():
 
 #app page - input
 
+
+if __name__ == '__main__':
+    app.run(debug=True)
