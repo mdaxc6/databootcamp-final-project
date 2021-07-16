@@ -1,3 +1,7 @@
+import sys
+# insert at 1, 0 is the script path (or '' in REPL)
+sys.path.insert(1, 'static/scripts/detect_sentiment.py')
+from detect_sentiment import detect_sentiment
 
 from flask import Flask, render_template, jsonify
 from flask_cors import CORS

@@ -1,10 +1,9 @@
 from joblib import load
 import pandas as pd
 
-model = load('../../modeling/models/svm_model.joblib')
-
 
 def detect_sentiment(text):
+    model = load('../../modeling/models/svm_model.joblib')
     df = pd.DataFrame([text])
     prediction = model.predict(df[0])
 
@@ -12,4 +11,4 @@ def detect_sentiment(text):
 
 
 
-print(detect_sentiment("This movie was pretty good."))
+
