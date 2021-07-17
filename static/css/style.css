@@ -17,27 +17,39 @@ body {
 
 }
 
-.navbar-inner {
-    height: 50px;
+.clear-floats {
+    clear: both;
+    display: block;
 }
+
 
 #input-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 #review-form {
     height: 100px !important;
-    width: 400px;
+    width: 100%;
+}
+
+form {
+    width: 100%;
 }
 
 #input-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    /* background-color: black;
+    opacity: 0.5; */
+}
+
+#background-container {
+    background-color: rgba(0, 0, 0, .5);
 }
 
 #input-label {
@@ -47,13 +59,15 @@ body {
     color: lightgray;
 }
 
-#output {
-    margin-top: 150px;
-    display: flex;
+#output, #user-text {
+    /* margin-top: 150px; */
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     color: lightgray;
 }
+
+
 
 footer {
     position: fixed;
@@ -64,7 +78,7 @@ footer {
     text-align: center;
   }
 
-.bottom {
+/* .bottom {
     padding: 2px;   
     background: #515d68;
-}
+} */
