@@ -26,7 +26,7 @@ def review():
     text = request.form['text']
     processed_text = detect_sentiment(text)
     processed_text = processed_text.upper()
-    return processed_text
+    return render_template("index.html", result=processed_text)
 
 
 #app page - input
