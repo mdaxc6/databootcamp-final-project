@@ -40,7 +40,7 @@ html, body {
 
 #background {
     height: 200px;
-    background-color: #CCCCCC;
+    background-color: #5e5858;
     background-image: linear-gradient(red, yellow, green);
    }
 
@@ -87,7 +87,7 @@ html, body {
 .info {
     padding: 6px 8px;
     font: 14px/16px Arial, Helvetica, sans-serif;
-    background: white;
+    background: rgba(255, 255, 255, 0.325);
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -102,10 +102,10 @@ html, body {
 .footer, .page-wrap:after {
     height: 40px;
     /* min-height: 100px; */
-    background: #94c5f5;
+    background: #e0e3e6;
 }
 
 .bottom {
     padding: 2px;   
-    background: #1b3146;
+    background: #515d68;
 }
