@@ -33,6 +33,8 @@ body {
 #review-form {
     padding: 20px 10px; 
     line-height: 28px;
+    height: 100px !important;
+    width: 400px;
 }
 
 #input-button {
@@ -50,7 +52,7 @@ body {
 }
 
 #output {
-    margin-top: 500px;
+    margin-top: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
