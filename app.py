@@ -3,8 +3,6 @@ from detect_sentiment import detect_sentiment
 from flask import Flask, render_template, request
 from flask_cors import CORS
 
-import logging
-import sys
 
 ###################################################
 # Flask Setup
@@ -36,6 +34,3 @@ def review():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-app.logger.addHandler(logging.StreamHandler(sys.stdout))
-app.logger.setLevel(logging.ERROR)
