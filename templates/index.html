@@ -26,10 +26,15 @@
 
   <div id="input-form" class="col-md-12">
     <form method="POST">
-        <input name="text">
-        <input type="submit">
+        <!-- <input id="review-form" name="text" value="Insert your review here..."> -->
+        <textarea rows = "5" cols = "60" name = "description">Enter your review here...</textarea>
     </form>
-  </div>   
+  </div>
+  <div id="input-button" class="col-md-12">
+    <form method="POST">
+      <input type="submit">
+    </form>
+  </div>     
 
   <div id="output" class="col-md-12">
     <h2> Results: {{result}}</h2>

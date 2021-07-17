@@ -27,6 +27,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+}
+
+#review-form {
+    padding: 20px 10px; 
+    line-height: 28px;
+}
+
+#input-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
 #input-label {
