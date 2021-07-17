@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <title>Final Project</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="../static/css/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis Using Machine Learning</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+
+
 <body>
 <!---Nav bar-->
-  <div class="page-wrap">
-  <div class="wrapper">
-
     <nav class="navbar navbar-default">
       <div class="container-fluid">
           <div class="navbar-header">
@@ -31,7 +31,12 @@
         <input id="input-button" type="submit">
     </form>
   </div>
-    
+
+  <div id="input-button" class="col-md-12">
+    <form method="POST">
+      
+    </form>
+  </div>     
 
   <div id="output" class="col-md-12">
     <h2> Results: {{result}}</h2>
