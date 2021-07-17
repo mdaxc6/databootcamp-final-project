@@ -9,18 +9,39 @@ html, body {
     height: 100%;
 }
 
-.page-wrap{
-    min-height: 100%;
+body {
+    background: url("../../images/theater_seats.jpeg") no-repeat center center fixed;
+}
 
+/* .page-wrap{
+    min-height: 100%;
+    flex: 1 0 auto;
     margin-bottom: -40px;
 }
 
 .page-wrap:after{
     display: block;
+} */
+
+#input-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.jumbotron {
-    background-image: url(background.jpeg);
+#input-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightgray;
+}
+
+#output {
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightgray;
 }
 
 .wrapper {
@@ -31,79 +52,15 @@ html, body {
 }
 
 
-.col-md-12 {
-    position: relative;
-    height: 400px;
-    padding: 20px;
-    margin: 0;
-}
 
-#background {
-    height: 200px;
-    background-color: #5e5858;
-    background-image: linear-gradient(red, yellow, green);
-   }
-
-.h1 {
-    margin-top: 200px;
-    font-size: 0.1rem;
-    animation: title 1.2s forwards linear;
-}
-
-.well{
-    margin-top: 50px;
-}
-#mapid {
-    height: 750px;
-    /* width: 900px; */
-    margin-top: 50px;
-}
-
-#scatter, #scatter2 {
-    margin: 150px;
-    display: flex;
-    align-items: center;
-}
-
-#bar {
-    margin: 50px;
-    margin-right: 50px;
-    display: flex;
-    align-items: center;
-}
-#bar-and-desc{
-    margin-top: 150px;
-    display: flex;
-    align-items: center;
-}
-.data-desc{
-    margin: 50px;
-    margin-top: 50px;
-    margin-right: 50px;
-    display: flex;
-    align-items: center;
-    line-height: 200%;
-}
-.info {
-    padding: 6px 8px;
-    font: 14px/16px Arial, Helvetica, sans-serif;
-    background: rgba(255, 255, 255, 0.325);
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
-
-.info h1 {
-    margin: 0 0 5px;
-    color: #777;
-}
-
-
-.footer, .page-wrap:after {
-    height: 40px;
-    /* min-height: 100px; */
-    background: #e0e3e6;
-}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
 
 .bottom {
     padding: 2px;   
