@@ -4,11 +4,12 @@ from flask import Flask, render_template, request
 from flask_cors import CORS
 
 
+
 ###################################################
 # Flask Setup
 ###################################################
 app = Flask(__name__)
-cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
+#cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 
 ###################################################
