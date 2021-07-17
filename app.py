@@ -1,17 +1,8 @@
-#from detect_sentiment import detect_sentiment
+from detect_sentiment import detect_sentiment
 
 from flask import Flask, render_template, request
 from flask_cors import CORS
-from joblib import load
-import pandas as pd
 
-
-def detect_sentiment(text):
-    model = load('modeling/models/svm_model.joblib')
-    df = pd.DataFrame([text])
-    prediction = model.predict(df[0])
-
-    return prediction[0]
 
 
 ###################################################
