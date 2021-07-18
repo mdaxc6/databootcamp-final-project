@@ -38,26 +38,83 @@
                     </div>
                 </div>
 
+                <div class="row justify-content-center">
+                    <div class=summary id="project-description" class="col-md-12">
+                        <p>This is a description of the overall project. Here we can describe the three models we tried,
+                            and why we chose svm.</p>
+                    </div>
+                </div>
+
                 <div class="row justify-content-left">
-                    <div class=summary id="nb-model" class="col-md-12">
+                    <div class=summary id="nb-model-title" class="col-md-12">
                         <h3>Naive Bayes Model</h3>
+                    </div>
+
+                    <div class=summary id="nb-model-desc" class="col-md-6">
                         <p>This is some text explaining the model.</p>
+                    </div>
+
+                    <div class="summary col-md-6">
+                        <table id="nb-confusion-matrix">
+                            <caption>Naive Bayes Confusion Matrix</caption>
+                            <tr>
+                                <th></th>
+                                <th>POSITIVE</th>
+                                <th>NEGATIVE</th>
+                            </tr>
+                            <tr>
+                                <th>POSITIVE</th>
+                                <td>5430</td>
+                                <td>960</td>
+                            </tr>
+                            <tr>
+                                <th>NEGATIVE</th>
+                                <td>727</td>
+                                <td>5383</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
 
                 <div class="row justify-content-left">
-                    <div class=summary id="svm-model" class="col-md-12">
+                    <div class=summary id="svm-model-title" class="col-md-12">
                         <h3>Support Vector Machine Model</h3>
+                    </div>
+                    <div class=summary id="svm-model-desc" class="col-md-6">
                         <p>This is some text explaining the model.</p>
+                    </div>
+                    <div class="summary col-md-6">
+                        <table id="svm-confusion-matrix">
+                            <caption>SVM Confusion Matrix</caption>
+                            <tr>
+                                <th></th>
+                                <th>POSITIVE</th>
+                                <th>NEGATIVE</th>
+                            </tr>
+                            <tr>
+                                <th>POSITIVE</th>
+                                <td>5390</td>
+                                <td>544</td>
+                            </tr>
+                            <tr>
+                                <th>NEGATIVE</th>
+                                <td>767</td>
+                                <td>5799</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
 
                 <div class="row justify-content-left">
-                    <div class=summary id="rules-based" class="col-md-12">
+                    <div class=summary id="rules-based-title" class="col-md-12">
                         <h3>Rules Based Analysis</h3>
+                    </div>
+                    <div class=summary id="rules-based-desc" class="col-md-6">
                         <p>This is some text explaining the model.</p>
                     </div>
-                    
+                    <div class=summary id="rules-based-desc" class="col-md-6">
+                        <p>This is some text explaining the model.</p>
+                    </div>
                 </div>
 
             </div>
