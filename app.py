@@ -29,7 +29,9 @@ def review():
     processed_text = processed_text.upper()
     return render_template("index.html", result=processed_text, submitted_text=text)
 
-
+@app.route("/about")
+def about():
+    return render_template("about.html")
 #app page - input
 
 
