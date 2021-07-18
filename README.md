@@ -9,8 +9,9 @@ Allow a user to enter a custom review and predict whether it is negative or posi
 - AWS buckets
 - Flask
 - Heroku
-- PySpark
-- Google Colaboratory
+- sklearn
+- VADER
+- Jupyter Notebooks
 - HTML/CSS
 - JavaScript
 
