@@ -31,7 +31,9 @@ Finally, we will host that app using Heroku so it will be publicly a
     - Flask
 3. Preperation
     - AWS
-    - PySpark
+    - Jupyter Notebooks
+    - sklearn 
+    - VADER
 
 ## Model Improvement
 
