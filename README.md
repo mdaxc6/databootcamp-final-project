@@ -9,8 +9,9 @@ Allow a user to enter a custom review and predict whether it is negative or posi
 - AWS buckets
 - Flask
 - Heroku
-- PySpark
-- Google Colaboratory
+- sklearn
+- VADER
+- Jupyter Notebooks
 - HTML/CSS
 - JavaScript
 
@@ -30,7 +31,9 @@ Finally, we will host that app using Heroku so it will be publicly a
     - Flask
 3. Preperation
     - AWS
-    - PySpark
+    - Jupyter Notebooks
+    - sklearn 
+    - VADER
 
 ## Model Improvement
 
