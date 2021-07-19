@@ -24,7 +24,6 @@ Using sci-kit learn, we trained two seperate models. One using Naive Bayes, and 
 
 1. Front End
     - HTML/CSS/BOOTSTRAP
-    - JavaScript
 2. Back End
     - Flask
 3. Preperation
