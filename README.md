@@ -2,7 +2,7 @@
 
 ## Goal
 
-Allow a user to enter a custom review and predict whether it is negative or positive.
+Use sentiment analysis to allow a user to enter a custom review and predict whether it is negative or positive.
 
 ## Technologies used
 
@@ -13,12 +13,10 @@ Allow a user to enter a custom review and predict whether it is negative or posi
 - VADER
 - Jupyter Notebooks
 - HTML/CSS
-- JavaScript
 
 ## Overview
 
-Our data will be stored in a S3 bucket via AWS. With that data, we will train a model to make our predictions.  To accomplish this we will be using Google Colaboratory and PySpark's natural language processing, combined with a NaiveBayes model.  After saving the model (.h5), we will implement that model, along with a webpage, into a flask app.
-Finally, we will host that app using Heroku so it will be publicly accessible. Once hosted, a user can enter their own review,and using the model we created, a prediction will be presented determining whether the review is a positive one, or a negative one.
+Using sci-kit learn, we trained two seperate models. One using Naive Bayes, and the other Support Vector Machine. After comparing the preformance of both models on the same testing dataset, we found that the SVM model was the most accurate, at about 89.5% accurate. To further support our choice, we also tested a rules based sentiment analysis and compared its results to the same test dataset, which were significantly lower than the machine learning approach, at about 69.5%. Once we found our model, we saved it and implemented it into a web-page that allows a user to test their own custom review. The model is loaded and used in the 'detect_sentiment.py' file, it contains a simple function that takes a string, and returns a prediciton. This fucntion is called from within app.py, which contains the rest of our flask app. The html is rendered using Flask's render templates, and the app itself is hosted on heroku. 
 
 ***Datasource***: https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 
@@ -35,18 +33,7 @@ Finally, we will host that app using Heroku so it will be publicly a
     - sklearn 
     - VADER
 
-## Model Improvement
 
-- Sentiment Analysis
-
-## Visualizations (Work On Last)
-
-- Word cloud with most common words for positive/negative respectivley
-
-## Webpage
-
-Here is a ***very rough*** idea of what the end result will look like.
-The about page will have a description of how we setup the model and how it works
-The visuals page (time permitting) will include some analysis such as most frequent words or review length
-![Webpage Outline](images/webpage.png)
+## Link
+The completed project van be viewed here: [Review Categorizer](https://movie-review-categorizer.herokuapp.com/)
 
