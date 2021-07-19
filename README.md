@@ -35,5 +35,5 @@ Using sci-kit learn, we trained two seperate models. One using Naive Bayes, and 
 
 
 ## Link
-The completed project van be viewed here: [Review Categorizer](https://movie-review-categorizer.herokuapp.com/)
+The completed project can be viewed here: [Review Categorizer](https://movie-review-categorizer.herokuapp.com/)
 
