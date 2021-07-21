@@ -40,8 +40,8 @@
 
                 <div class="row justify-content-center">
                     <div class=summary id="project-description" class="col-md-12">
-                        <p>This is a description of the overall project. Here we can describe the three models we tried,
-                            and why we chose svm.</p>
+                        <p>For this machine learning project, a database containing 50,000 movie reviews from IMDb was chosen to preform sentiment analysis on a user inputed 'custom' review. Below are the details of the approach and models used. </p>
+                        <p>Using sci-kit learn, we trained two seperate machine learning models. One using Naive Bayes, and the other Support Vector Machine. After comparing the preformance of both models on the same testing dataset, we found that the SVM model was the most accurate, at about 89.5% accurate. To further support our choice, we also tested a rules based sentiment analysis and compared its results to the same test dataset, which were significantly lower than the machine learning approach, at about 69.5%. Once we found our model, we saved it and implemented it into this web-page that allows a user to test their own custom review.</p>
                     </div>
                 </div>
 
@@ -51,7 +51,7 @@
                     </div>
 
                     <div class=summary id="nb-model-desc" class="col-md-6">
-                        <p>This is some text explaining the model. 86.5% accuracy against testing data.</p>
+                        <p>To start, we seperated the dataset into testing and training data using scikit-learn's 'test_train_split'. Next a pipeline was created to process the text. Sklearn's CountVectorizer allowed us to break the reviews into a matrix of token counts. Then, using the tfidfTransformer, also from sklearn, we gave each token a weight, which is calculated using the difference between the number of times the word appears in each review, and the number of occurrences among all reviews. The final step in our pipeline was adding the Naive Bayes model. After running the training data through the pipeline and fitting it to the model, we ran it against our testing data which resulted in an <strong>86.5% accuracy</strong>.</p>
                     </div>
 
                     <div class="summary col-md-6">
@@ -81,7 +81,7 @@
                         <h3>Support Vector Machine Model</h3>
                     </div>
                     <div class=summary id="svm-model-desc" class="col-md-6">
-                        <p>This is some text explaining the model. 89.5% accuracy against testing data.</p>
+                        <p>Testing the Support Vector Machine model was reletivley easy considering we had our pipeline set up. The only change that was necessary was switching from a Naive Bayes model to SVM. The process was the same after that. We ran our training data through the new pipeline, and fit it to the model. After testing against the testing data, we achieved an <strong>89.5% accuracy</strong>. This ended up being the strongest model, and was thus chosen for our page. </p>
                     </div>
                     <div class="summary col-md-6">
                         <table id="svm-confusion-matrix">
@@ -110,7 +110,7 @@
                         <h3>Rules Based Analysis</h3>
                     </div>
                     <div class=summary id="rules-based-desc" class="col-md-6">
-                        <p>This is some text explaining the model. 69.6% accuracy against dataset.</p>
+                        <p>We also wanted to try a non machine learning approach for comparison. For this approach, there was no risk of overfitting, so we did not split the data into training and testing sets like before. Instead, we used the VADER library, which includes a Sentiment Analyzer. Using a set of pre-defined rules, it finds the number of positive and negative words in each review, and calculates a sentiment. Vader provides us with positive and negative results, as well as neutral, and compound scores, which can be thought of as its 'overall' prediction. We went through all 50,000 reviews and checked if the compound score was above or below 0. Then we compared the predicted results with the provided classifiers, and found that this approach achieved <strong>69.6% accuracy</strong>.</p>
                     </div>
                     <div class="summary col-md-6">
                         <table id="rules-based-confusion-matrix">
